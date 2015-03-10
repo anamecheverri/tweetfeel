@@ -2,9 +2,11 @@
 
 {% block body %}
     <ul>
-    {% for status in statuses %}
+    {% for tweet in tweets %}
         <li>
-        {{ status.text }}
+        {{ tweet }}
+        {{ tweet.sentiment.polarity }}
+        {{ tweet.sentiment.subjectivity }}
         </li>
     {% endfor %}
     </ul>
