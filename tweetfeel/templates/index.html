@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <ul>
+    {% for status in statuses %}
+        <li>
+        {{ status.text }}
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
